@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فيصل مهزع الرشيدي - مشاريعي</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>مشاريعي</h1>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="home.html">الرئيسية</a></li>
+                    <li><a href="about.html">من أنا</a></li>
+                    <li><a href="projects.html">مشاريعي</a></li>
+                    <li><a href="home.html#contact">تواصل معي</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="projects">
+            <div class="container">
+                <h2>مشاريعي المميزة</h2>
+                <p>إليكم بعض المشاريع التي عملت عليها، والتي تعكس خبرتي وشغفي في البرمجة وتطوير البرمجيات:</p>
+                <div class="filters">
+                    <button onclick="filterProjects('all')" class="btn">الكل</button>
+                    <button onclick="filterProjects('web')" class="btn">تطوير المواقع</button>
+                    <button onclick="filterProjects('security')" class="btn">الأمن السيبراني</button>
+                </div>
+                <div id="projects-container" class="projects-grid">
+                    <div class="project" data-category="web">
+                        <h3>موقعي الشخصي</h3>
+                        <p>موقع شخصي يعرض مهاراتي ومشاريعي، مبني باستخدام HTML، CSS، وJavaScript.</p>
+                    </div>
+                    <div class="project" data-category="security">
+                        <h3>مشروع الأمن السيبراني</h3>
+                        <p>نموذج لتحليل وحماية الشبكات من التهديدات السيبرانية.</p>
+                    </div>
+                    <div class="project" data-category="web">
+                        <h3>تطبيق متجر إلكتروني</h3>
+                        <p>تطبيق ويب لمتجر إلكتروني صغير يتيح الشراء والدفع عبر الإنترنت.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+           
+            <p>جميع الحقوق محفوظة &copy; 2024 فيصل مهزع الرشيدي</p>
+        </div>
+    </footer>
+</body>
+</html>
